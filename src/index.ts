@@ -1,13 +1,13 @@
 // https://abal.moe/Eris/docs/
-const Eris = require('eris');
+import * as Eris from 'eris';
 
-const bot = new Eris(process.env.DISCORD);
+const bot = new Eris.Client(process.env.DISCORD || 'TOKEN NOT SET');
 
 bot.on('ready', () => {
   console.log('Ready!');
 });
 
-bot.on('messageCreate', (msg) => {
+bot.on('messageCreate', (msg: Eris.Message) => {
   if (msg.content === '!ping') {
     bot.createMessage(msg.channel.id, 'Pong.');
   }

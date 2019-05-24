@@ -1,6 +1,6 @@
 env:
   node: true
-extends: airbnb-base
+extends: airbnb-typescript/base
 parserOptions:
   ecmaVersion: 2018
 rules:

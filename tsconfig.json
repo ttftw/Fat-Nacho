@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2017", 
+    "module": "commonjs",
+    "outDir": "build", 
+    "rootDir": "src", 
+    "incremental": true,
+    "tsBuildInfoFile": "build/.tscache",
+    "strict": true,
+    "alwaysStrict": true,
+    "pretty": true
+  }
+}

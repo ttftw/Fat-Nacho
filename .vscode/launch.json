@@ -5,8 +5,12 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Bot",
-      "program": "${workspaceFolder}/src/index.js",
-      "envFile": "${workspaceFolder}/.env"
+      "program": "${workspaceFolder}/src/index.ts",
+      "preLaunchTask": "TSC",
+      "envFile": "${workspaceFolder}/.env",
+      "outFiles": [
+        "${workspaceFolder}/build/**/*.js"
+      ]
     }
   ]
 }
